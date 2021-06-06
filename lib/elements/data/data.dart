@@ -1,14 +1,14 @@
 class Data {
-  String date;
-  int totalCases;
-  int newCases;
-  int totalRecoveries;
-  int newRecoveries;
-  int totalDeaths;
-  int newDeaths;
+  late String date;
+  late int totalCases;
+  late int newCases;
+  late int totalRecoveries;
+  late int newRecoveries;
+  late int totalDeaths;
+  late int newDeaths;
 
-  Data(this.date, this.totalCases, this.newCases, this.totalRecoveries,
-      this.newRecoveries, this.totalDeaths, this.newDeaths);
+  Data(this.date, this.totalCases, this.newCases, this.totalRecoveries, this.newRecoveries, this.totalDeaths, this.newDeaths);
+  
   Data.fromJson(Map<String, dynamic> json) {
     date = json['date'];
     totalCases = json['totalCases'];

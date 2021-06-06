@@ -1,11 +1,8 @@
 import "package:flutter/material.dart";
-
-import 'card.dart' as card;
+import "card.dart" as card;
 
 class MainBody extends StatefulWidget {
-  const MainBody({
-    Key key,
-  }) : super(key: key);
+  const MainBody({ Key? key }) : super(key: key);
 
   @override
   _MainBodyState createState() => _MainBodyState();
@@ -13,10 +10,9 @@ class MainBody extends StatefulWidget {
 
 class _MainBodyState extends State<MainBody> {
   @override
-  @override
   Widget build(BuildContext context) {
     return Column(
-      children: <Widget>[
+      children: <Widget> [
         SizedBox(height: 20.0),
         Row(
           children: <Widget>[
@@ -24,9 +20,10 @@ class _MainBodyState extends State<MainBody> {
             Text("Nepal"),
           ],
         ),
+
         SizedBox(height: 20.0),
         card.MainCard(),
-      ],
+      ], 
     );
   }
 }
